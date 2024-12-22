@@ -1,0 +1,57 @@
+@import './base.css';
+
+#app {
+  margin: 0;
+  padding: 0 ;
+  font-weight: normal;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:focus {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  border: 0.1rem solid var(--color-primary);
+  border-radius: 10rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.primary:hover {
+  background-color: rgb(0, 0, 0);
+  border: 0.1rem solid rgb(255, 255, 255, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+.secondary {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 1rem;
+  border: 0.1rem solid rgb(255, 255, 255, 0.5);
+  border-radius: 10rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.secondary:hover {
+  background-color: var(--color-primary);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+
